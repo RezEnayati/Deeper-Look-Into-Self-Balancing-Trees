@@ -24,10 +24,21 @@ The interesting thing here is that the name of this structure actually gives us 
 **4. Balanced Binary Tree:** A tree where the height is kept as small as possible.  
 **5. Degenerate (Skewed) Tree:** Every parent has only one child, and the tree is more similar to a linked list. (This is where things start to get problematic.)
 
-  ### Binary Search Trees
-  Binary Search Trees, or BSTs for short, are a type of binary tree with one important rule: for every node in the tree, all elements in the left subtree are less than the node, and all elements in the right subtree are greater than the node. This makes searching very efficient — O(log n). So what's the problem? Imagine a scenario where you're only inserting elements greater or smaller than the root. For example, let's say you insert 10, then 11, then 12, then 15. This will make the tree behave more like a linked list, and we don’t want that, since the whole point of trees is to make searching efficient. 
-  To solve this, we need to find a way to keep these trees as balanced as possible, in order to maintain that O(log n) search time.
-  The solution? **Self-Balancing Trees.**
+### Binary Search Trees
+Binary Search Trees, or BSTs for short, are a type of binary tree with one important rule: for every node in the tree, all elements in the left subtree are less than the node, and all elements in the right subtree are greater than the node. This makes searching very efficient `O(log n)`. So what's the problem? Imagine a scenario where you're only inserting elements greater or smaller than the root. For example, let's say you insert 10, then 11, then 12, then 15. This will make the tree behave more like a linked list, and we don’t want that, since the whole point of trees is to make searching efficient. 
+To solve this, we need to find a way to keep these trees as balanced as possible, in order to maintain that O(log n) search time.
+The solution? **Self-Balancing Trees.**
+
+***
+
+### Definition of Self-Balancing Trees:
+These trees are a type of BST that automatically adjust their structure during insertions and deletions to maintain an efficient shape. The goal is to keep the tree's height as close to `O(log n)` as possible, because the time it takes to insert, delete, and search in the structure depends on the height of the tree. These trees guarantee that the height stays close to `O(log n)` by using built-in balancing methods, which I will explain in the following sections. 
+
+In this guide, my focus is to cover AVL Trees, Splay Trees, Red-Black Trees, and 2-3-4 Trees, which are some of the most common and foundational types of self-balancing trees. Buckle up because we're gonna get coding!
+
+***
+ 
+## Adelson-Velsky and Landis (AVL) Trees
 
 
 
