@@ -24,6 +24,11 @@ The interesting thing here is that the name of this structure actually gives us 
 **4. Balanced Binary Tree:** A tree where the height is kept as small as possible.  
 **5. Degenerate (Skewed) Tree:** Every parent has only one child, and the tree is more similar to a linked list. (This is where things start to get problematic.)
 
+### Binary Search Trees
+Binary Search Trees, or BSTs for short, are a type of binary tree with one important rule: for every node in the tree, all elements in the left subtree are less than the node, and all elements in the right subtree are greater than the node. This makes searching very efficient — O(log n). So what's the problem? Imagine a scenario where you're only inserting elements greater or smaller than the root. For example, let's say you insert 10, then 11, then 12, then 15. This will make the tree behave more like a linked list, and we don’t want that, since the whole point of trees is to make searching efficient. 
+To solve this, we need to find a way to keep these trees as balanced as possible, in order to maintain that O(log n) search time.
+The solution? **Self-Balancing Trees.**
+
 
 
 
