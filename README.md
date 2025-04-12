@@ -39,7 +39,7 @@ In this guide, my focus is to cover AVL Trees, Splay Trees, Red-Black Trees, and
 ***
  
 ## Adelson-Velsky and Landis (AVL) Trees
-
+The way AVL Trees maintain efficiency is by automatically keeping itself balanced after every insetion and deletion. 
 
 
 
