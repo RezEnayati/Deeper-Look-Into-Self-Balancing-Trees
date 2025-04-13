@@ -42,4 +42,10 @@ In this guide, my focus is to cover AVL Trees, Splay Trees, Red-Black Trees, and
 The way AVL Trees maintain efficiency is by automatically keeping itself balanced after every insetion and deletion. 
 
 
+## Splay Tree
+
+## Red Black Tree
+
+## 2-3-4 Trees
+
 
